@@ -14,4 +14,5 @@ function betterThanAverage(classPoints, yourPoints) {
   let classSum = classPoints.reduce((acc, current) => acc + current, 0);
   let average = (classSum + yourPoints) / (classPoints.length + 1);
   return yourPoints > average;
+  
 }
