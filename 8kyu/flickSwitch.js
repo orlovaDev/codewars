@@ -27,11 +27,11 @@ function flickSwitch(arr) {
 
 
 function flickSwitch(arr) {
-  let state = true
+  let state2 = true
   return arr.map(el => {
     if (el === 'flick') {
-      state = !state
+      state2 = !state2
     }
-    return state
+    return state2
   })
 }
