@@ -26,7 +26,7 @@ function flickSwitch(arr) {
 // ✅ РЕШЕНИЕ2:
 
 
-function flickSwitch(arr) {
+function flickSwitch2(arr) {
   let state2 = true
   return arr.map(el => {
     if (el === 'flick') {
