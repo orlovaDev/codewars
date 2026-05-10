@@ -8,7 +8,7 @@
 //
 // ['flick', 'chocolate', 'adventure', 'sunshine'] ➞ [False, False, False, False]
 //
-// ['bicycle', 'jarmony', 'flick', 'sheep', 'flick'] ➞ [True, True, False, False, True]
+// ['bicycle', 'harmony', 'flick', 'sheep', 'flick'] ➞ [True, True, False, False, True]
 
 // Примечания:
 // "flick" всегда будет отображаться в нижнем регистре.
@@ -23,6 +23,9 @@ function flickSwitch(arr) {
 }
 
 
+const result = flickSwitch(['codewars', 'flick', 'code', 'wars']);
+console.log(result); // [true, false, false, false]
+
 // ✅ РЕШЕНИЕ2:
 
 
@@ -35,3 +38,6 @@ function flickSwitch2(arr) {
     return state2
   })
 }
+
+const result2 = flickSwitch2(['codewars', 'flick', 'code', 'wars']);
+console.log(result2); // [true, false, false, false]
