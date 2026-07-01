@@ -1,3 +1,5 @@
+// ❓ УСЛОВИЕ:
+
 //   Примеры
 // 'eloquent' --> 'loquen'
 // 'country'  --> 'ountr'
