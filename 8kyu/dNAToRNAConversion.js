@@ -14,6 +14,5 @@
 // ✅ РЕШЕНИE
 
 function DNAtoRNA(dna) {
-  const rna = dna.replaceAll("T", "U");
-  return rna;
+  return dna.replaceAll("T", "U");
 }
