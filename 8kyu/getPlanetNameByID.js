@@ -33,6 +33,7 @@ function getPlanetName(id){
       break;
     case 8:
       name = 'Neptune'
+      break;
   }
   return name;
 }
