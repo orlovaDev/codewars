@@ -8,7 +8,7 @@
 //  строки должны разделяться символом переноса строки;
 //  последняя строка не должна заканчиваться символом переноса строки.
 
-// ✅ РЕШЕНИЕ:
+// ✅ РЕШЕНИЕ1:
 
 function transposeTwoStrings(array) {
   const [str1, str2] = array;
@@ -21,5 +21,19 @@ function transposeTwoStrings(array) {
     result.push(`${char1} ${char2}`);
   }
 
+  return result.join('\n');
+}
+
+
+// ✅ РЕШЕНИЕ2:
+
+function transposeTwoStrings2(array) {
+  const [str1, str2] = array;
+  const length = Math.max(str1.length, str2.length);
+  const result = [];
+  for (let i = 0; i < length; i++) {
+    const char = (array[0][i] || " ") + " " + (array[1][i] || " ");
+    result.push(char);
+  }
   return result.join('\n');
 }
