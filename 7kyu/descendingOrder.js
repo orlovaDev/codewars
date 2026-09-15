@@ -30,6 +30,6 @@ function descendingOrder(n) {
 
 // ✅ РЕШЕНИЕ2
 
-function descendingOrder(n){
+function descendingOrder2(n){
   return parseInt(String(n).split('').sort((a, b) => b - a).join(''), 10);
 }
