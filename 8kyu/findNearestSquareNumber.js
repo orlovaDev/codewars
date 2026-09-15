@@ -10,26 +10,8 @@
 
 // Input: 123456789 Output: 987654321
 
-// ✅ РЕШЕНИЕ1
+// ✅ РЕШЕНИЕ
 
-function descendingOrder(n) {
-  let str = String(n);
-  let digits = [];
-  for (let i = 0; i < str.length; i++) {
-    digits.push(str[i]);
-  }
-  digits.sort(function(a, b) {
-    return b - a;
-  });
-  let resultString = "";
-  for (let i = 0; i < digits.length; i++) {
-    resultString += digits[i];
-  }
-  return Number(resultString);
-}
-
-// ✅ РЕШЕНИЕ2
-
-function descendingOrder(n){
-  return parseInt(String(n).split('').sort((a, b) => b - a).join(''), 10);
+function nearestSq(n){
+  return Math.pow(Math.round(Math.sqrt(n)), 2);
 }
