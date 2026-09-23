@@ -11,13 +11,9 @@
 // start < stop
 // step > 0
 
+
 // ✅ РЕШЕНИЕ:
 
-function generateRange(min, max, step) {
-  const result = [];
-  for (let i = min; i <= max; i += step) {
-    result.push(i);
-  }
-  return result;
-}
-
+String.prototype.digit = function() {
+  return (this.length === 1 && this >= '0' && this <= '9')
+};
