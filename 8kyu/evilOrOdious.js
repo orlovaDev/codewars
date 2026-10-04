@@ -10,11 +10,18 @@
 
 // ✅ РЕШЕНИЕ:
 
+// function evil(n) {
+//   const countOnes = n.toString(2).split('1').length - 1;
+//   if (countOnes % 2 === 0) {
+//     return "It's Evil!";
+//   } else {
+//     return "It's Odious!";
+//   }
+// }
+
+// ✅ РЕШЕНИЕ2:
+
 function evil(n) {
-  const countOnes = n.toString(2).split('1').length - 1;
-  if (countOnes % 2 === 0) {
-    return "It's Evil!";
-  } else {
-    return "It's Odious!";
-  }
+  return n.toString(2).split('1').length % 2 !== 0 ? "It's Evil!" : "It's Odious!";
 }
+
