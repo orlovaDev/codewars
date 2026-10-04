@@ -1,0 +1,20 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "model": "aiai/deepseek-v4.1-flash",
+  "provider": {
+    "aiai": {
+      "npm": "@ai-sdk/openai-compatible",
+      "name": "AIAI.BY",
+      "options": {
+        "baseURL": "https://api.aiai.by/v1",
+        "apiKey": "sk-vedai-cP4W-XilwOjd4un-Qn05JwrFb7-FoW7lpKVDFZKHfns"
+      },
+      "models": {
+        "deepseek-v4.1-flash": {
+          "name": "DeepSeek V4.1 Flash (AIAI)",
+          "id": "deepseek-v4-flash"
+        }
+      }
+    }
+  }
+}

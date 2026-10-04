@@ -5,5 +5,5 @@
 // ✅ РЕШЕНИЕ:
 
 function booleanToString(b){
-  return String(b)
+
 }
