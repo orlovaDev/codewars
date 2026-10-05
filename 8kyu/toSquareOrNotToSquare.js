@@ -5,16 +5,22 @@
 // Пример: [4, 3, 9, 7, 2, 1] -> [2, 9, 3, 49, 4, 1].
 // Примечание: входной массив всегда содержит только положительные числа и никогда не бывает пустым или равным null.
 
-// ✅ РЕШЕНИЕ:
+// ✅ РЕШЕНИЕ1:
+// function squareOrSquareRoot(array) {
+//   const result = [];
+//   for (let i = 0; i < array.length; i++) {
+//     if (Math.sqrt(array[i]) % 1 === 0) {
+//       result.push(Math.sqrt(array[i]))
+//     } else {
+//       result.push(array[i] ** 2)
+//     }
+//   }
+//   return result;
+// }
 
+// ✅ РЕШЕНИЕ2:
 function squareOrSquareRoot(array) {
-  const result = [];
-  for (let i = 0; i < array.length; i++) {
-    if (Math.sqrt(array[i]) % 1 === 0) {
-      result.push(Math.sqrt(array[i]))
-    } else {
-      result.push(array[i] ** 2)
-    }
-  }
-  return result;
+  return array.map(num => {
+    return Math.sqrt(num) % 1 === 0 ? Math.sqrt(num) : num ** 2
+  })
 }
