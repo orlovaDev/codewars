@@ -19,6 +19,7 @@
 // }
 
 // ✅ РЕШЕНИЕ2:
+
 function squareOrSquareRoot(array) {
   return array.map(num => {
     return Math.sqrt(num) % 1 === 0 ? Math.sqrt(num) : num ** 2
