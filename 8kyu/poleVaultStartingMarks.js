@@ -23,10 +23,10 @@
 
 // ✅ РЕШЕНИЕ2:
 const k = 3.935
-const bOffset = 3.468
+const offset = 3.468
 
 function startingMark(bodyHeight){
-  const result = (k * bodyHeight) + bOffset
+  const result = (k * bodyHeight) + offset
   return Number(result.toFixed(2))
 }
 
