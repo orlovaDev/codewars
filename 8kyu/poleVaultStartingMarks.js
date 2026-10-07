@@ -9,12 +9,21 @@
 // Однако также присутствует постоянное смещение. Если вы сможете определить описанную выше скорость изменения, то сумеете вычислить и это постоянное смещение.
 
 // ✅ РЕШЕНИЕ1:
-const a = 1.52
-const b = 9.45
-const a2 = 1.83
-const b2 = 10.67
-const k = (b2 - b) / (a2 - a)  //  3,935
-const bOffset = b - (a * k)
+// const a = 1.52
+// const b = 9.45
+// const a2 = 1.83
+// const b2 = 10.67
+// const k = (b2 - b) / (a2 - a)  //  3,935
+// const bOffset = b - (a * k)
+//
+// function startingMark(bodyHeight){
+//   const result = (k * bodyHeight) + bOffset
+//   return Number(result.toFixed(2))
+// }
+
+// ✅ РЕШЕНИЕ2:
+const k = 3.935
+const bOffset = 3.468
 
 function startingMark(bodyHeight){
   const result = (k * bodyHeight) + bOffset
