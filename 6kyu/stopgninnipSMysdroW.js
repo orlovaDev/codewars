@@ -17,3 +17,10 @@ function spinWords(string) {
   return reverseString.join(" ")
 }
 
+// ✅ РЕШЕНИЕ2:
+
+function spinWords(string) {
+  return string.replace(/\b[a-zA-Z]{5,}\b/g, (word) => {
+    return word.split('').reverse().join('');
+  });
+}
