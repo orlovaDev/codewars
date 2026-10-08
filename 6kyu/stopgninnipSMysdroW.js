@@ -6,16 +6,16 @@
 
 // ✅ РЕШЕНИЕ1:
 
-function spinWords(string) {
-  const reverseString = string.split(" ").map(word => {
-    if (word.length >= 5) {
-      return word.split("").reverse().join("");
-    } else {
-      return word
-    }
-  })
-  return reverseString.join(" ")
-}
+// function spinWords(string) {
+//   const reverseString = string.split(" ").map(word => {
+//     if (word.length >= 5) {
+//       return word.split("").reverse().join("");
+//     } else {
+//       return word
+//     }
+//   })
+//   return reverseString.join(" ")
+// }
 
 // ✅ РЕШЕНИЕ2:
 
