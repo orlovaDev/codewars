@@ -4,11 +4,18 @@
 //  На вход не будут подаваться числа с плавающей запятой или неположительные целые числа.
 //  Например, для массива [19, 5, 42, 2, 77] результатом должно быть число 7, а для массива [10, 343445353, 3453445, 3453545353453] — 3453455.
 
-// ✅ РЕШЕНИЕ:
+// ✅ РЕШЕНИЕ1:
+
+// function sumTwoSmallestNumbers(numbers) {
+//   const minNum = numbers.sort((a, b) => a - b)
+//   const minNum1 = minNum[0]
+//   const minNum2 = minNum[1]
+//   return minNum1 + minNum2;
+// }
+
+// ✅ РЕШЕНИЕ2:
 
 function sumTwoSmallestNumbers(numbers) {
-  const minNum = numbers.sort((a, b) => a - b)
-  const minNum1 = minNum[0]
-  const minNum2 = minNum[1]
-  return minNum1 + minNum2;
+  numbers.sort((a,b) => a - b);
+  return numbers[0] + numbers[1];
 }
