@@ -10,6 +10,5 @@ function sumTwoSmallestNumbers(numbers) {
   const minNum = numbers.sort((a, b) => a - b)
   const minNum1 = minNum[0]
   const minNum2 = minNum[1]
-  let result = minNum1 + minNum2;
-  return result
+  return minNum1 + minNum2;
 }
