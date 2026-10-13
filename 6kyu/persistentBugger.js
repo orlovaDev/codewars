@@ -9,6 +9,8 @@
 
 // ✅ РЕШЕНИЕ:
 
+
+
 function persistence(num) {
   let count = 0;
   while (num >= 10) {
