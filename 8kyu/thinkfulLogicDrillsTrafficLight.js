@@ -7,5 +7,10 @@
 // ✅ РЕШЕНИЕ:
 
 function updateLight(current) {
-  return current === "green" ? "yellow" : current === "yellow" ? "red" : "green";
+  const dictionary = {
+    green: "yellow",
+    yellow: "red",
+    red: "green"
+  };
+  return dictionary[current];
 }
