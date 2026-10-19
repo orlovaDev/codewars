@@ -7,9 +7,5 @@
 // ✅ РЕШЕНИЕ:
 
 function updateLight(current) {
-  switch (current) {
-    case "green":  return "yellow";
-    case "yellow": return "red";
-    default:       return "green";
-  }
+  return current === "green" ? "yellow" : current === "yellow" ? "red" : "green";
 }
