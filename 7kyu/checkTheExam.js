@@ -31,10 +31,20 @@
 
 // ✅ РЕШЕНИЕ2:
 
+// function checkExam(array1, array2) {
+//   let sum = 0;
+//   for (let i = 0; i < array1.length; i++) {
+//     array1[i] === undefined || array2[i] === undefined || array1[i] === '' || array2[i] === '' ? sum += 0 : array1[i] === array2[i] ? sum += 4 : sum -= 1
+//   }
+//   return sum < 0 ? 0 : sum;
+// }
+
+// ✅ РЕШЕНИЕ3:
 function checkExam(array1, array2) {
   let sum = 0;
   for (let i = 0; i < array1.length; i++) {
     array1[i] === undefined || array2[i] === undefined || array1[i] === '' || array2[i] === '' ? sum += 0 : array1[i] === array2[i] ? sum += 4 : sum -= 1
   }
-  return sum < 0 ? 0 : sum;
+  if (sum < 0) return 0;
+  else return sum
 }
