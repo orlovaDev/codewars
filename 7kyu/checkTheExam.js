@@ -40,6 +40,7 @@
 // }
 
 // ✅ РЕШЕНИЕ3:
+
 function checkExam(array1, array2) {
   let sum = 0;
   for (let i = 0; i < array1.length; i++) {
