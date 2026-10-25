@@ -30,6 +30,6 @@
 
 // ✅ РЕШЕНИЕ2:
 
-function battery_bars(percent) {
+function batteryBars(percent) {
   return percent >= 100 ? "[#####]" : percent >= 80 ? "[####.]" : percent >= 60 ? "[###..]" : percent >= 40 ? "[##...]" : percent >= 20 ? "[#....]" : "[.....]";
 }
