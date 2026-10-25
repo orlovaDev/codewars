@@ -10,20 +10,26 @@
 // battery_bars(19)   # => "[.....]"
 // battery_bars(0)    # => "[.....]"
 
-// ✅ РЕШЕНИЕ:
+// ✅ РЕШЕНИЕ1:
 
-function batteryBars(percent) {
-  if (percent >= 100) {
-    return "[#####]";
-  } else if (percent >= 80) {
-    return "[####.]";
-  } else if (percent >= 60) {
-    return "[###..]";
-  } else if (percent >= 40) {
-    return "[##...]";
-  } else if (percent >= 20) {
-    return "[#....]";
-  } else {
-    return "[.....]";
-  }
+// function batteryBars(percent) {
+//   if (percent >= 100) {
+//     return "[#####]";
+//   } else if (percent >= 80) {
+//     return "[####.]";
+//   } else if (percent >= 60) {
+//     return "[###..]";
+//   } else if (percent >= 40) {
+//     return "[##...]";
+//   } else if (percent >= 20) {
+//     return "[#....]";
+//   } else {
+//     return "[.....]";
+//   }
+// }
+
+// ✅ РЕШЕНИЕ2:
+
+function battery_bars(percent) {
+  return percent >= 100 ? "[#####]" : percent >= 80 ? "[####.]" : percent >= 60 ? "[###..]" : percent >= 40 ? "[##...]" : percent >= 20 ? "[#....]" : "[.....]";
 }
